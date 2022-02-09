@@ -31,14 +31,14 @@ function playRound(playerSelection, computerSelection) {
 
 const computerSelection = computerPlay();
 const playerSelection = "rock";
-console.log(playerSelection, computerSelection, playRound(playerSelection, computerSelection));
+
 
 //record wins / losses
 function game() {
 let playerScore = 0;
 let computerScore = 0;
     for(let i = 0; i < 5; i++) {
-       switch (playRound(window.prompt(`rock,paper or scissors?`), computerPlay())){
+       switch (playRound(window.prompt(`rock,paper or scissors?`).toLowerCase(), computerPlay())){
            case "win":playerScore++;
            case "lose":computerScore++;
        }
