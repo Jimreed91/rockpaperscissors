@@ -19,7 +19,9 @@ function playRound(playerSelection, computerSelection) {
     if(playerSelection == computerSelection) {
         console.log( `Draw! you both picked ${playerSelection}`)
         return "draw";
-    } else if(playerSelection == "paper" && computerSelection =="rock" || playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "scissors" && computerSelection == "paper") {
+    } else if(playerSelection == "paper" && computerSelection =="rock" ||
+             playerSelection == "rock" && computerSelection == "scissors" ||
+              playerSelection == "scissors" && computerSelection == "paper") {
         console.log( `You win the round! ${playerSelection} beats ${computerSelection}`)
         return "win"
     } else {
