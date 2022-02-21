@@ -1,0 +1,39 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.page-header {
+    display:flex;
+    flex-direction: column;
+    background-color: darkslategray;
+    min-height: 100px;
+    align-items: center;
+    justify-content:center;
+    
+}
+.scoreboard{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.scores{
+    display:flex;
+    flex-direction:column;
+    font-weight: bolder;
+    align-items: center;
+}
+.game-space{
+    display:flex;
+    justify-content: space-around;
+    min-height: 100%;
+}
+
+button{
+    min-height: 200px;
+    min-width:200px;
+}

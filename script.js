@@ -55,3 +55,11 @@ let computerScore = 0;
     }
 }
 //loop game until player or computer has won/lost 5 times
+
+const buttons = document.querySelectorAll("button");
+
+
+buttons.forEach((button)=>{ 
+    button.addEventListener("click", (e)=>
+    console.log(e));
+})
