@@ -9,25 +9,39 @@
 <body>
     <div id="wrapper">
       <header class="page-header">
-        <h1>Rock, Paper......Scissors</h1>
+        <h1>Rock, Paper, Scissors</h1>
+        <h2>First to 5 wins is the champion</h2>
       </header>
        
       <ul class = scoreboard>
-        <div class="scores">Player
-            <div class="player-score ">0</div>
+        <div class="scores">Player Score
+            <div id="player-score">0</div>
+            <div id="player-choice"></div>
+            <!-- <button class="choice-img"> </button> -->
         </div>
-        <div class="computer-score scores">Computer
-            <div class="player-score">0</div>
+        <div class="scores">Computer score
+            <div id="computer-score">0</div>
+            <div id="computer-choice"></div>
+            <!-- <button class="choice-img"></button> -->
         </div>    
       </ul>
 
       <div class = "game-space">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
+        <button class = "rock" data-choice = "rock">
+          <img  src="./images/rock.JPG">
+        </button>
+        <button class="paper" data-choice="paper">
+          <img  src="./images/paper.JPG"> 
+        </button>
+        <button class="scissors" data-choice="scissors">
+          <img  src="./images/sicssors.JPG" alt="scissors">
+        </button>
       </div>
         
-        
+      <div id="winner-message"></div>
+      <footer>
+        <div id="me">James Reed, 28th Feb 2022, jamesreed3050@gmail.com</div>
+      </footer>
     </div>
 </body>
 </html>
